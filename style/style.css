@@ -351,7 +351,7 @@ footer{
         font-size: 1rem;
     }
     .sponsor-container img{
-    width: 250%;
+    width: 350%;
 }
 .card-container{
     grid-template-columns: repeat(1, 1fr);
