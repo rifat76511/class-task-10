@@ -20,13 +20,18 @@ body{
     justify-content: center;
     align-items: center;
     gap: 8px;
+    max-width: 194px;
 
 }
 .btn img{
     width: 16px;
     height: 14px;
 }
+
 /* nav section */
+#all-item{
+    display: none;
+}
 .nav-container{
     display: flex;
     max-width: 1200px;
@@ -99,7 +104,7 @@ body{
     position: absolute;
     top: 30px;
     left: 5px;
-    width: 440px;
+    width: 100%;
     height: auto;
     
 }
@@ -115,6 +120,9 @@ body{
     align-items: center;
     padding: 36px 62px;
     gap: 60px;
+}
+.sponsor-container img{
+    width: 100%;
 }
 /* card section */
 .card-container{
@@ -257,7 +265,7 @@ body{
 footer{
     background-color: rgb(10, 8, 38);
     max-width: 5600px;
-    padding: 50px 568px 50px 568px;
+    padding: 50px;
     text-align: center;
     margin: 100px auto 0;
 }
@@ -297,4 +305,97 @@ footer{
     line-height: 1.5rem;
     color: rgba(217, 219, 225, 1);
     margin-bottom: 3px;
+}
+@media screen and (max-width:576px) {
+    #all-item{
+        display: inline;
+        height: 12px;
+        width: 18px;
+    }
+    .nav-container{
+        display: flex;
+        align-items: center;
+    }
+    .header-section{
+        flex-direction: column-reverse;
+        gap: 5px;
+    }
+    .display-none{
+    display: none;
+    }
+    .left-section{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 10px;
+        
+    }
+    .header-section .left-section h2{
+        font-size: 2.05rem;
+    }
+    .header-section .right-section{
+        margin: 0 20px;
+        background-size: 95%;
+    }
+    .nav-container{
+        margin: 35px 16px 22px 16px;
+    }
+    .sponsor-container{
+        box-shadow: none;
+        grid-template-columns: repeat(4, 1fr);
+
+    }
+    .nav-container h5{
+        font-size: 1rem;
+    }
+    .sponsor-container img{
+    width: 250%;
+}
+.card-container{
+    grid-template-columns: repeat(1, 1fr);
+}
+    .last-container{
+        flex-direction: column-reverse;
+    }
+    .card-section a{
+    text-decoration: none;
+    text-align: center;
+     color: #E02C6D;
+     font-size: 1rem;
+     font-weight: 700;
+     position: relative;
+     top: 50px;
+     left: 110px;
+}
+.last-container .info-section{
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+.last-container .info-section h2{
+    font-size: 1.68rem;
+}
+.last-container .image-section img{
+    width: 95%;
+    margin: 10px;
+}
+.right-section{
+    position: relative;
+    height: 475px;
+    width: 100%;
+    max-width: 475px;
+    background-image: url("../images/Circle\ design.svg");
+         background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.right-section img{
+    position: absolute;
+    top: 90px;
+    left: 20px;
+    width: 85%;
+    height: auto;
+    
+}
 }
