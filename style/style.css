@@ -344,6 +344,7 @@ footer{
     .sponsor-container{
         box-shadow: none;
         grid-template-columns: repeat(4, 1fr);
+        margin-right: 20px;
 
     }
     .nav-container h5{
